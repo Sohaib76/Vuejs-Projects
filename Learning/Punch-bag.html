@@ -1,0 +1,74 @@
+<!DOCTYPE hmtl>
+<html>
+  <head>
+    <title>Punching Bag</title>
+    <script src = "vue.js"></script>
+    <link href = "styles.css" rel = "stylesheet" />
+
+
+
+  </head>
+
+  <body>
+    <div id = "app">
+
+      <!-- Bag -->
+
+      <div id = "bag" v-bind:class="{burst:ended}"></div>
+
+
+
+
+
+
+
+
+      <!-- Bag health -->
+      <div id = "bagHealth">
+        <div v-bind:style="{width:health + '%'}"></div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <!-- control -->
+      <div id = "control">
+        <button @click= "punch" v-show="!ended" type="button" name="Punch">Punch</button>
+        <button @click= "restart" type="button" name="Reset">Reset</button>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src = "magic.js"></script>
+
+
+  </body>
+
+
+
+
+
+
+</html>
